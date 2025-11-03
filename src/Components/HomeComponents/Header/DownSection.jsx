@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import routes from "../../routes/routes";
+import routes from "../../../routes/routes";
 const DownSection = () => {
   return (
     <section className="down__section">
@@ -12,7 +12,7 @@ const DownSection = () => {
           <Link to={routes.shop}>
             <li className="pages__li merriweather">Shop</li>
           </Link>
-          <Link to={routes.aboutUs}>
+          <Link to={routes.about}>
             <li className="pages__li merriweather">About Us</li>
           </Link>
           <Link to={routes.myAccount}>
@@ -42,9 +42,9 @@ const DownSection = () => {
             class="fa-solid fa-cart-shopping"
             style={{ color: "#000000;" }}
           ></i>
+          <span className="cart__span merriweather">0</span>
         </Link>
 
-        <span className="cart__span merriweather">0</span>
         <p className="total__price merriweather">$ 0</p>
       </div>
     </section>

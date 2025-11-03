@@ -1,16 +1,17 @@
-let Home = "/";
+let home = "/";
 let shop = "/shop";
-let aboutUs = "/about-us";
+let about = "/about";
 let myAccount = "/my-account";
 let contact = "/contact";
 let cart = "/cart";
+
 let routes = {
-    Home,
-    shop,
-    aboutUs,
-    myAccount,
-    contact,
-    cart,
+    Home: home,
+    shop:shop,
+    about: about,
+    myAccount: myAccount,
+    contact:contact,
+    cart:cart
 }
 
-export default routes
+export default routes;

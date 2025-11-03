@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import "../../GlobalCss/Fonts.css";
+import "../../../GlobalCss/Fonts.css";
 import TopSection from "./TopSection";
 import DownSection from "./DownSection";
 // import media
