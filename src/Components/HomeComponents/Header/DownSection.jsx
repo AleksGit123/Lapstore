@@ -32,7 +32,7 @@ const DownSection = () => {
         />
         <i
           class="fa-solid fa-magnifying-glass"
-          style={{ color: "#000000;" }}
+          style={{ color: "#000000" }}
         ></i>
       </div>
 
@@ -40,7 +40,7 @@ const DownSection = () => {
         <Link to={routes.cart}>
           <i
             class="fa-solid fa-cart-shopping"
-            style={{ color: "#000000;" }}
+            style={{ color: "#000000" }}
           ></i>
           <span className="cart__span merriweather">0</span>
         </Link>

@@ -1,0 +1,101 @@
+.scroll__section {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 570px;
+    border-radius: 8px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.scroll__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 7px;
+}
+
+.scroll__div{
+    position: relative;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slogan__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    position: absolute;
+    top: 30%;
+    right:10%;
+}
+.slogan{
+    
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 800;   
+}
+.scroll__span{
+   background-image: linear-gradient(
+        to right,
+        #00aaff 0%,   /* New Color (e.g., bright blue) */
+        #1a1a1a 50%,  /* Base Color (e.g., dark gray) */
+        #1a1a1a 100%
+    );
+    color: #1a1a1a;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: background-position 0.5s;
+}
+.span2{
+    transition: background-position 0.5s;
+    transition-delay: 0.2s;
+}
+
+.scroll__section:hover .scroll__span {
+    background-position: 0 0;
+}
+
+.details__btn{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+    z-index: 2;
+}
+.details__btn::before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    top:-57px;
+    left: -150px;
+    background-color: #FFFFFF;
+    transition: .2s;
+    z-index: -1;
+}
+.details__btn:hover{
+    color: #00aaff;
+    border-color: #00aaff;
+}
+.details__btn:hover::before{
+    top: 0;
+    left: 0;
+}
