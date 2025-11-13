@@ -3,6 +3,7 @@ import Header from "../../Components/HomeComponents/Header/Header";
 import Section1 from "../../Components/HomeComponents/Section1/Section1";
 import ScrollSection from "../../Components/HomeComponents/scrollSection/ScrollSection";
 import MoreCategories from "../../Components/HomeComponents/moreCategories/MoreCategories";
+import SalesTimer from "../../Components/HomeComponents/sales-timer/SalesTimer";
 const Home = () => {
   return (
     <main className="App">
@@ -10,6 +11,7 @@ const Home = () => {
       <Section1 />
       <ScrollSection/>
       <MoreCategories/>
+      <SalesTimer/>
     </main>
   );
 };

@@ -1,0 +1,125 @@
+.sales__timer {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.71),
+            rgba(0, 0, 0, 0.632)), url("../../../media/timerBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 97%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    column-gap: 30px;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* text div */
+.timer__text__div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.timer__text__div p,
+h2 {
+    color: #FFFFFF;
+    width: fit-content;
+}
+
+.timer__text {
+    font-size: 32px;
+    line-height: 30px;
+    word-spacing: 10px;
+    font-weight: 800;
+}
+
+.timer__p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-block: 15px 30px;
+}
+
+.timer__span {
+    display: inline-block;
+    position: relative;
+    color: #00aaff;
+    transition: .5s;
+    font-size: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.timer__span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0%;
+    opacity: 0;
+    border: 1px solid #00aaff;
+    transition: .4s;
+}
+
+.sales__timer:hover .timer__span::before {
+    width: 86%;
+    opacity: 1;
+}
+
+.timer__button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.timer__button:hover {
+    transform: translate(3px, -6px);
+    color: #00aaff;
+    border-color: #00aaff;
+}
+
+.timer {
+    position: relative;
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 170px;
+    backdrop-filter: blur(5px);
+}
+
+.time {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid #00aaff;
+}
+
+.time:not(:last-child)::after{
+    content: ":";
+    position: absolute;
+    right: -50px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.time h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+
+}
