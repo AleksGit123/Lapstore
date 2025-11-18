@@ -4,15 +4,17 @@ import Section1 from "../../Components/HomeComponents/Section1/Section1";
 import ScrollSection from "../../Components/HomeComponents/scrollSection/ScrollSection";
 import MoreCategories from "../../Components/HomeComponents/moreCategories/MoreCategories";
 import SalesTimer from "../../Components/HomeComponents/sales-timer/SalesTimer";
+import ProductSect from "../../Components/HomeComponents/productSection/ProductSect";
 const Home = () => {
   return (
-    <main className="App">
+    < >
       <Header />
       <Section1 />
       <ScrollSection/>
       <MoreCategories/>
       <SalesTimer/>
-    </main>
+      <ProductSect/>
+    </>
   );
 };
 

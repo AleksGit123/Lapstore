@@ -16,7 +16,7 @@
 
 .category__article__div{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     column-gap: 30px;
 }
 .category__article{

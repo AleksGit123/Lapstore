@@ -106,7 +106,9 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 10px;
-    border: 2px solid #00aaff;
+    box-shadow: 0 0 10px #00aaff,
+    0 0 15px #00aaff,
+    0 0 20px #00aaff;
 }
 
 .time:not(:last-child)::after{

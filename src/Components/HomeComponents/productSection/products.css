@@ -1,0 +1,108 @@
+.product__section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    gap: 30px 30px;
+    padding: 40px 120px;
+}
+
+
+.product__article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    border: 2px solid #758A93;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0 0 0 transparent;
+}
+.product__article::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003d;
+    /* filter: brightness(0.5); */
+    backdrop-filter: brightness(0.2);
+    border-radius: 8px;
+    transition: .4s;
+    backdrop-filter: blur(3px);
+}
+
+.product__article:hover{
+    transform: scale(1.2);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.671);
+}
+.product__article:hover::before{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* image div */
+.product__img__div{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.product__image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* text div */
+.text__div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-inline: 10px;
+    border-radius: 10px;
+
+}
+.product__article__h2{
+    color: #24272B;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.product__article__p{
+    color: #24272B;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00aaff;
+}
+
+
+/* button div */
+.button__div{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    padding: 10px;
+}
+.button__div>button{
+    padding: 8px 20px;
+    background-color: transparent;
+    background-color: #1D2228;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    color: #00aaff;
+    font-size: 18px;
+    box-shadow:2px 2px 3px  #00aaff;
+    transition:all .3s;
+}
+.button__div>button:hover{
+    color: #1D2228;
+    box-shadow: 2px 2px 3px #1D2228;
+    background-color: #00aaff;
+}
