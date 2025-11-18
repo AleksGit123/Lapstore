@@ -8,6 +8,7 @@ import routes from './routes/routes';
 // import pages
 import Home from './Pages/Home/Home';
 import { useState } from 'react';
+import Footer from './Components/footer/Footer';
 function App() {
   const [clicked, setClicked] = useState(false);
   return (
@@ -44,7 +45,7 @@ function App() {
 
       </Routes>
 
-      
+      <Footer/>
     </main>
   );
 }

@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24272B;
+    color: #FFFFFF;
+    padding:30px  120px;
+}
+
+.brands__img {
+    width: 450px;
+    height: 200px;
+    filter: drop-shadow(0 2px 2px #00aaff);
+}
+
+.footer__nav {
+    padding: 10px;
+    width: 152px;
+}
+
+.footer__h2 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid #00aaff;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+.footer__ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+.footer__li {
+    cursor: pointer;
+    transition: .4s;
+    color: #FFFFFF;
+}
+
+.footer__li:hover {
+    color: #00aaff;
+}
