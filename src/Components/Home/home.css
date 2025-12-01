@@ -4,6 +4,12 @@
 .home__h1 {
     color: var(--white-text);
     font-size: 32px;
+    transition: .4s;
+    text-shadow:0 0 0 transparent;
+}
+.home__h1:hover{
+    color: black;
+    text-shadow: 0 2px 7px #FFFFFF;
 }
 
 /* text div */
@@ -24,12 +30,19 @@
     line-height: 24px;
     font-size: 16px;
     word-spacing: 5px;
+    transition: .4s;
+    text-shadow:0 0 4px transparent;
+}
+.home__li:hover{
+    color: black;
+    text-shadow: 0 0px 4px #FFFFFF,
+    0 2px 10px #FFFFFF;
 }
 
 /* image div */
 .home__image__section {
+    position: relative;
     display: flex;
-    width: 100%;
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -50,7 +63,7 @@
     content: "";
     display: block;
     position: absolute;
-    bottom: -55%;
+    bottom: -53.5%;
     left: -62px;
     transform: rotate(180deg);
     background-image: url("../../assets/laptop.png");

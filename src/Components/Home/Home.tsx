@@ -1,7 +1,10 @@
 import "./home.css";
 import "../../GlobalCss/fonts.css";
 import laptop from "../../assets/laptop.png";
+import Form from "./Form/Form";
+
 const Home = () => {
+  
   return (
     <>
       <section className="home__text__div">
@@ -20,7 +23,9 @@ const Home = () => {
         <div className="laptop__image__div">
           <img src={laptop} alt="laptop" className="laptop" />
         </div>
+        <Form/>
       </section>
+
     </>
   );
 };

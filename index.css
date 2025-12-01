@@ -1,19 +1,22 @@
+*,*:hover{
+    cursor: url("./src/assets/Maincursor.png") 0 0 ,auto;
+}
+
 body {
-    background-image: url("./homeBackground.png");
+    background-image: url("./src/assets/homeBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100dvh;
+    
 }
 #root{
     display: flex;
     padding-block-start: 70px;
-    /* border: 2px solid red; */
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     width: 75%;
-    border: 2px solid red;
     min-height: 680px;
 }
