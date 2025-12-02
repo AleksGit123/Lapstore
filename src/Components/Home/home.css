@@ -1,22 +1,24 @@
 @import url("../../GlobalCss/variables.css");
 
 
-.home__h1 {
-    color: var(--white-text);
-    font-size: 32px;
-    transition: .4s;
-    text-shadow:0 0 0 transparent;
-}
-.home__h1:hover{
-    color: black;
-    text-shadow: 0 2px 7px #FFFFFF;
-}
 
 /* text div */
 .home__text__div {
     display: flex;
     flex-direction: column;
-    row-gap: 160px;
+    row-gap: 140px;
+}
+
+.home__h1 {
+    color: var(--white-text);
+    font-size: 30px;
+    transition: .4s;
+    text-shadow: 0 2px 7px transparent;
+}
+
+.home__h1:hover {
+    color: black;
+    text-shadow: 0 2px 7px #FFFFFF;
 }
 
 .home__ul {
@@ -29,14 +31,35 @@
     color: var(--white-text);
     line-height: 24px;
     font-size: 16px;
+    font-weight: 500;
     word-spacing: 5px;
     transition: .4s;
-    text-shadow:0 0 4px transparent;
+    text-shadow: 0 0 4px transparent;
 }
-.home__li:hover{
-    color: black;
+
+.home__li:hover {
+    color: #000000;
     text-shadow: 0 0px 4px #FFFFFF,
-    0 2px 10px #FFFFFF;
+        0 2px 10px #FFFFFF;
+}
+
+.checkout {
+    background: linear-gradient(to right, #FFFFFF 50%, #000000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-clip: text;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    color: transparent;
+    --webkit-background-clip: text;
+    font-size: 18px;
+    padding: 5px;
+    transition: .6s;
+}
+
+.checkout:hover {
+    background-position: 0 0;
+    transform: translateX(10px);
 }
 
 /* image div */
@@ -46,18 +69,21 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    
 }
-.laptop__image__div{
+
+.laptop__image__div {
     position: relative;
     width: fit-content;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .laptop {
     transform: translate(-12%, -70px);
+    width: 1000px;
+    transition: .2s ease-in-out;
 }
+
 
 .laptop__image__div::after {
     content: "";
@@ -72,4 +98,52 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+}
+
+/* laptop image screen content */
+.screen__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    position: absolute;
+    left: 145px;
+    top: 5px;
+    border-radius: 5px;
+    width: 527px;
+    height: 343px;
+}
+
+.screen__content,
+.screen__content * {
+    cursor: url("../../assets/cursor.png") 0 0, auto;
+}
+
+/* laptop image screen login btn*/
+.screen__header {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 10px;
+    padding: 10px 10px 0 0 ;
+}
+
+.screen__btn {
+    font-size: 10px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    padding: 2px 10px;
+    transition: .5s;
+}
+
+.screen__btn:hover {
+    transform: scale(1.1);
+}
+
+.screen__text {
+    font-size: 80px;
+    letter-spacing: 13.7px;
+    background:linear-gradient(-138deg,#FFFFFF 50%,#000000 50%) ;
+    background-clip: text;
+    color: transparent;
+    transition: .4s;
 }
