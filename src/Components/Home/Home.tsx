@@ -1,15 +1,16 @@
+import { useState } from "react";
+import laptop from "../../assets/laptop.png";
 import "./home.css";
 import "../../GlobalCss/fonts.css";
-import laptop from "../../assets/laptop.png";
-import { useState } from "react";
-
+import routes from "../../routes/route";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [zoomed, setZoomed] = useState(false);
-    const toggleZoom = () =>{
-      setZoomed(prev => !prev)
-    }
-  
+  const navigate = useNavigate();
+  const [zoomed, setZoomed] = useState(false);
+  const toggleZoom = () => {
+    setZoomed(true);
+  };
+
   return (
     <>
       <section className="home__text__div">
@@ -23,21 +24,33 @@ const Home = () => {
           <li className="home__li montserrat">Efficent Sales</li>
         </ul>
 
-        <button className="checkout dela-gothic-one" onClick={toggleZoom}>S H O P</button>
+        <button className="checkout dela-gothic-one" onClick={toggleZoom}>
+          S H O P
+        </button>
       </section>
 
       <section className="home__image__section">
         <div className="laptop__image__div">
-          <img src={laptop} alt="laptop" className="laptop"  />
+          <img src={laptop} alt="laptop" className="laptop" />
         </div>
 
         <div className="screen__content">
           <header className="screen__header">
-            <button className="screen__login__btn screen__btn montserrat">Sign Up</button>
-            <button className="screen__sugnup__btn screen__btn montserrat">Log In</button>
-
+            <button className="screen__login__btn screen__btn montserrat">
+              Sign Up
+            </button>
+            <button
+              className="screen__sugnup__btn screen__btn montserrat"
+              onClick={() => {
+                navigate(routes.registration);
+              }}
+            >
+              Log In
+            </button>
           </header>
-          <h1 className="screen__text organix">LAPSTORE</h1>
+          <h1 className={`screen__text organix ${zoomed ? "zoomed" : ""}`}>
+            LAPSTORE
+          </h1>
         </div>
       </section>
     </>

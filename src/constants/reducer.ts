@@ -1,0 +1,8 @@
+let initialState = {
+
+}
+
+
+let reducer =() =>{
+
+}
